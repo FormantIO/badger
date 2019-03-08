@@ -23,8 +23,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/dgraph-io/badger/options"
-	"github.com/dgraph-io/badger/y"
+	"github.com/FormantIO/badger/options"
+	"github.com/FormantIO/badger/y"
 	"github.com/stretchr/testify/require"
 )
 

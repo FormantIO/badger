@@ -29,13 +29,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/dgraph-io/badger/options"
+	"github.com/FormantIO/badger/options"
 
 	"golang.org/x/net/trace"
 
-	"github.com/dgraph-io/badger/skl"
-	"github.com/dgraph-io/badger/table"
-	"github.com/dgraph-io/badger/y"
+	"github.com/FormantIO/badger/skl"
+	"github.com/FormantIO/badger/table"
+	"github.com/FormantIO/badger/y"
 	"github.com/pkg/errors"
 )
 

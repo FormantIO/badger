@@ -27,7 +27,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/dgraph-io/badger/y"
+	"github.com/FormantIO/badger/y"
 	farm "github.com/dgryski/go-farm"
 	"github.com/pkg/errors"
 )
@@ -655,7 +655,7 @@ func (db *DB) NewTransaction(update bool) *Txn {
 	// 4. This txn increments the oracle reference.
 	// 5. Now this txn would go on to commit the keyset, and no conflicts
 	//    would be detected.
-	// See issue: https://github.com/dgraph-io/badger/issues/574
+	// See issue: https://github.com/FormantIO/badger/issues/574
 	txn.readTs = db.orc.readTs()
 	return txn
 }
