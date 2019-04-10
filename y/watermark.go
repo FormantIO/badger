@@ -56,10 +56,10 @@ type mark struct {
 // An index may also become "done" by calling SetDoneUntil at a time such that it is not
 // inter-mingled with Begin/Done calls.
 type WaterMark struct {
-	Name      string
-	markCh    chan mark
 	doneUntil uint64
 	lastIndex uint64
+	Name      string
+	markCh    chan mark
 	elog      trace.EventLog
 }
 
